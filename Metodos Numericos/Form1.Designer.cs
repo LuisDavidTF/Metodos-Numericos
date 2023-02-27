@@ -29,30 +29,42 @@ namespace Metodos_Numericos
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.dgb = new System.Windows.Forms.DataGridView();
+            this.Iteracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.x1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.x2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.x3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtX1 = new System.Windows.Forms.TextBox();
             this.txtX2 = new System.Windows.Forms.TextBox();
             this.txtX3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Iteracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.x1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.x2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.x3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCalcular
             // 
-            this.button1.Location = new System.Drawing.Point(160, 72);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCalcular.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(243, 85);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(93, 36);
+            this.btnCalcular.TabIndex = 0;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgb
             // 
@@ -65,61 +77,23 @@ namespace Metodos_Numericos
             this.x1,
             this.x2,
             this.x3});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgb.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgb.Location = new System.Drawing.Point(36, 165);
             this.dgb.Name = "dgb";
             this.dgb.Size = new System.Drawing.Size(444, 150);
             this.dgb.TabIndex = 1;
             // 
-            // txtX1
-            // 
-            this.txtX1.Location = new System.Drawing.Point(37, 48);
-            this.txtX1.Name = "txtX1";
-            this.txtX1.Size = new System.Drawing.Size(100, 20);
-            this.txtX1.TabIndex = 2;
-            // 
-            // txtX2
-            // 
-            this.txtX2.Location = new System.Drawing.Point(36, 74);
-            this.txtX2.Name = "txtX2";
-            this.txtX2.Size = new System.Drawing.Size(100, 20);
-            this.txtX2.TabIndex = 3;
-            // 
-            // txtX3
-            // 
-            this.txtX3.Location = new System.Drawing.Point(36, 103);
-            this.txtX3.Name = "txtX3";
-            this.txtX3.Size = new System.Drawing.Size(100, 20);
-            this.txtX3.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "x1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "x2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 106);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "x3";
-            // 
             // Iteracion
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Iteracion.DefaultCellStyle = dataGridViewCellStyle1;
             this.Iteracion.HeaderText = "Iteracion";
             this.Iteracion.Name = "Iteracion";
             this.Iteracion.ReadOnly = true;
@@ -142,11 +116,94 @@ namespace Metodos_Numericos
             this.x3.Name = "x3";
             this.x3.ReadOnly = true;
             // 
+            // txtX1
+            // 
+            this.txtX1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtX1.Location = new System.Drawing.Point(138, 61);
+            this.txtX1.Name = "txtX1";
+            this.txtX1.Size = new System.Drawing.Size(100, 29);
+            this.txtX1.TabIndex = 2;
+            // 
+            // txtX2
+            // 
+            this.txtX2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtX2.Location = new System.Drawing.Point(138, 96);
+            this.txtX2.Name = "txtX2";
+            this.txtX2.Size = new System.Drawing.Size(100, 29);
+            this.txtX2.TabIndex = 3;
+            // 
+            // txtX3
+            // 
+            this.txtX3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtX3.Location = new System.Drawing.Point(138, 131);
+            this.txtX3.Name = "txtX3";
+            this.txtX3.Size = new System.Drawing.Size(100, 29);
+            this.txtX3.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(103, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 22);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "x1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(103, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 22);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "x2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(103, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 22);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "x3";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Metodos_Numericos.Properties.Resources.R__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(134, 61);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(478, 321);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(40, 40);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(60)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(530, 366);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -154,10 +211,13 @@ namespace Metodos_Numericos
             this.Controls.Add(this.txtX2);
             this.Controls.Add(this.txtX1);
             this.Controls.Add(this.dgb);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCalcular);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "Iteraciones";
             ((System.ComponentModel.ISupportInitialize)(this.dgb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,7 +225,7 @@ namespace Metodos_Numericos
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.DataGridView dgb;
         private System.Windows.Forms.TextBox txtX1;
         private System.Windows.Forms.TextBox txtX2;
@@ -173,10 +233,12 @@ namespace Metodos_Numericos
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Iteracion;
         private System.Windows.Forms.DataGridViewTextBoxColumn x1;
         private System.Windows.Forms.DataGridViewTextBoxColumn x2;
         private System.Windows.Forms.DataGridViewTextBoxColumn x3;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 

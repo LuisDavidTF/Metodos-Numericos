@@ -14,6 +14,7 @@ namespace Metodos_Numericos
     {
         public Form1()
         {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             InitializeComponent();
         }
 
@@ -42,6 +43,11 @@ namespace Metodos_Numericos
                 dgb.Rows.Add(i,iteracionesx1[i],iteracionesx2[i],iteracionesx3[i]);
             }
             dgb.Rows.Add("Error Absoluto");
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
