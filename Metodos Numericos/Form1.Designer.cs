@@ -44,8 +44,9 @@ namespace Metodos_Numericos
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCambiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -170,19 +171,6 @@ namespace Metodos_Numericos
             this.label3.TabIndex = 7;
             this.label3.Text = "x3";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Metodos_Numericos.Properties.Resources.R__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(134, 61);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Red;
@@ -196,12 +184,42 @@ namespace Metodos_Numericos
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Metodos_Numericos.Properties.Resources.R__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(134, 61);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnCambiar
+            // 
+            this.btnCambiar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCambiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            this.btnCambiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCambiar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCambiar.Location = new System.Drawing.Point(425, 25);
+            this.btnCambiar.Name = "btnCambiar";
+            this.btnCambiar.Size = new System.Drawing.Size(93, 36);
+            this.btnCambiar.TabIndex = 11;
+            this.btnCambiar.Text = "2 Unidad";
+            this.btnCambiar.UseVisualStyleBackColor = false;
+            this.btnCambiar.Click += new System.EventHandler(this.btnCambiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(60)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(530, 366);
+            this.Controls.Add(this.btnCambiar);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
@@ -239,6 +257,7 @@ namespace Metodos_Numericos
         private System.Windows.Forms.DataGridViewTextBoxColumn x2;
         private System.Windows.Forms.DataGridViewTextBoxColumn x3;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnCambiar;
     }
 }
 

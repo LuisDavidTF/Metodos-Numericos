@@ -42,12 +42,18 @@ namespace Metodos_Numericos
             {
                 dgb.Rows.Add(i,iteracionesx1[i],iteracionesx2[i],iteracionesx3[i]);
             }
-            dgb.Rows.Add("Error Absoluto");
+            dgb.Rows.Add("Error Absoluto",iteracionesx1[9]-iteracionesx1[8], iteracionesx2[9] - iteracionesx2[8], iteracionesx3[9] - iteracionesx3[8]);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCambiar_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Visible = true;
         }
     }
 }
