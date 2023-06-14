@@ -38,10 +38,7 @@ namespace Metodos_Numericos
             double x=a+(0*iX);
             double y1 = Double.Parse(txtY1.Text);
             double fx= Eval.Execute<double>(tbFx.Text, new { y = y1, x = x });
-            for (int i = 0; i < Int16.Parse(txtN.Text); i++) 
-            {
-                dgb.Rows.Add((i),(a+(i*iX)));
-            }
+            
             dgb2.Rows.Add((0), x,y1,tbFx.Text+ (Eval.Execute<double>(tbFx.Text, new { y = y1,x=x })));
             for (int i = 1; i < n1; i++)
             {
